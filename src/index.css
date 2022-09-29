@@ -1,0 +1,324 @@
+*{
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  padding: 0;
+  background-color: #fffafb;
+} 
+
+.navbar{
+  display: flex;
+  align-items: center;
+  gap: 72px;
+  padding: 20px;
+}
+
+.link{
+  text-decoration: none;
+  border-bottom: 2px solid red;
+}
+
+.hero{
+  margin-top: 60px;
+  padding:0 40px;
+  position: relative;
+}
+
+.hero h5{
+  font-size: 30px;
+  color: red;
+  font-weight: 400;
+}
+
+.hero h2{
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 62px;
+  margin: 0;
+}
+
+.hero p {
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.hero-btn{
+  font-size: 15px;
+  color: aliceblue;
+  background-color: red;
+  padding: 9px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+.hero img{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 780px;
+  width: 680px;
+  object-fit: cover;
+  margin-top: -220px;
+  border-bottom-left-radius: 15px;
+}
+
+.hero h1{
+  font-size: 250px;
+  color: #ff2625;
+  display: block;
+  opacity: 0.1;
+  margin: 0;
+  margin-top: 10px;
+}
+
+/* search==============exercises*/
+.search-exercise{
+  padding: 40px;
+  text-align: center;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+}
+
+form input{
+  font-size: 14px;
+  padding: 10px;
+  width: 600px;
+  border: none;
+  border-radius: 10px;
+}
+
+form button{
+  background-color: #ff2625;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/*card*/
+
+.card-head{
+  position: relative;
+  padding: 10px;
+}
+
+.card-body{
+  height: 200px;
+  width: 200px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+}
+
+.right{
+  position: absolute;
+  left: 20px;
+  top: 0;
+  border: none;
+  background: none;
+  outline: none;
+  color: #ff2625;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.left{
+  color: #ff2625;
+  position: absolute;
+  left:20px;
+  font-size:20px;
+  z-index: 100;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.exercise{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+}
+
+.exercise-card{
+  height: 360px;
+  width: 300px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-top: 4px solid #ff2625;
+  border-bottom-left-radius: 20px;
+  text-decoration: none;
+}
+
+.exercise-card img{
+  height: 240px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.btn-container{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-container button{
+  color: #fff;
+  padding: 5px;
+  border: none;
+  outline: none;
+  margin-left: 21px;
+  font-size: 14px;
+  text-transform: capitalize;
+  background-color: #ff2625;
+  border-radius: 20px;
+  font-weight: 400;
+}
+
+.exercise-card h5{
+  margin-left: 21px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.details{
+  display: flex;
+  align-items: center; 
+  margin: 20px;
+  gap: 60px;
+}
+
+.details img{
+  height: 680px;
+  width: 650px;
+  background-color: #fff;
+  border-bottom-left-radius: 15px;
+}
+
+.details-desc{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.details-desc h3{
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  font-size: larger;
+}
+
+.details-desc h5{
+  line-height: 30px;
+}
+
+.similar-vid{
+  padding: 20px;
+}
+
+@media only screen and (max-width:767px) {
+  .hero{
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+  .hero h2{
+    font-size: 25px;
+    line-height: 50px;
+  }
+  .hero h5{
+    font-size: 20px;
+  }
+  .hero h1, .hero img{
+    display: none;
+  }
+  form input{
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    width: 150px;
+  }
+  .card-body{
+    height: 120px;
+    width: 110px;
+  }
+  
+  .details{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .details img{
+    height: 300px;
+    width: 300px;
+  }
+
+  .details-desc{
+    gap: 12px;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width: 972px){
+  .hero img{
+    width:400px;
+    height: 650px;
+  }
+  .hero h1{
+    font-size: 150px;
+  }
+  .details{
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media only screen and (min-width:973px){
+  .hero img{
+    width:600px;
+    height: 700px;
+  }
+  .hero h1{
+    font-size: 205px;
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  .hero img{
+    width:750px;
+  }
+
+  .hero h1{
+    font-size: 270px;
+  }
+}

@@ -1,0 +1,94 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    position: sticky;
+    top: 0pt;
+}
+
+.left-menu{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.left-menu-btn{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: larger;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left-text{
+    font-size: large;
+    color: #fff;
+}
+
+.frnd-container{
+    padding: 5px 10px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    overflow: hidden;
+    z-index: 100;
+    transition: 0.5s ease-in-out;   
+}
+
+.show{
+    width:300px;
+}
+
+article{
+    box-shadow:rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; 
+    background-color: white;
+    overflow: hidden;
+    border-radius: 5px;
+    height: auto;
+    color: black;
+    padding: 0;
+}
+
+.frnd-content{
+    padding: 5px 10px;
+}
+
+.frnd-head{
+    display: flex;
+    align-items: center;
+    gap:30%;
+}
+
+.frnd-info{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 10px;
+}
+
+.frnd-info img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+@media only screen and (max-width:600px) {
+    .left-text{
+        display:none;
+    }
+
+    .left-menu{
+        margin: 30px 0;
+        justify-content: center;
+    }
+}

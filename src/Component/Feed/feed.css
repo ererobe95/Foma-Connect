@@ -1,0 +1,84 @@
+.container-feed{
+    width: 100%;
+    padding: 10px;
+}
+
+.card{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+    margin: 15px 0;
+    background-color: white;
+}
+
+.card:hover{
+    background-color: aliceblue;
+}
+
+.card img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
+}
+
+.card-content{
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    margin: 0;
+}
+
+.likes{
+   border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.likes p{
+    font-size: small;
+    margin: 0;
+}
+
+
+.likes button, .a-btn{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    outline: none;
+    gap: 5px;
+    margin: 0;
+}
+
+.likes button{
+    border-radius: 50%;
+    font-size: small;
+    color: blue;
+}
+#dislike{
+    color:blue;
+}
+
+#like{
+    color: grey;
+}
+.action-btn{
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.a-btn{
+    color: grey;
+    cursor: pointer;
+}
+
+@media only screen and(max-width:400px){
+    
+}
