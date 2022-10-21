@@ -1,0 +1,43 @@
+.notify-container{
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    right: 2%;
+    top: -500%;
+    z-index: 7;
+    background-color: rgb(252, 243, 231);
+    height: auto;
+    width: 300px;
+   overflow: hidden;
+   transition: 0.3s ease-in;
+   box-shadow:rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; 
+}
+
+.showing{
+    top:80%;
+}
+
+.notify-content{
+  padding: 10px;
+}
+
+.notify-head{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.notify-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.notify-info img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
